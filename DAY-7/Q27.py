@@ -1,5 +1,4 @@
 # Write a program to Recursive sum of digits
-
 def sum(n):           #Here, sum means "sum of digits"
     if n == 0:
         return 0
