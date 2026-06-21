@@ -1,15 +1,12 @@
-# Write a program to Sort array in descending order
+# Write a program to Find sum of digits of a number.
 
-arr = [10, 30, 20, 50, 40]
+num = int(input("Enter a number: "))
 
-for i in range(5):
-    for j in range(i + 1, 5):
-        if arr[i] < arr[j]:
-            temp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = temp
+sum = 0
 
-print("Array in descending order:")
+while num > 0:
+    digit = num % 10
+    sum = sum + digit
+    num = num // 10
 
-for i in range(5):
-    print(arr[i], end=" ")
+print("Sum of digits =", sum)
